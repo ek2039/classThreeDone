@@ -30,7 +30,8 @@ function initializePage() {
     document.querySelector('[href="#cuisines"]').classList.add("active");
   } else {
     document
-      .querySelector('[href="' + window.location.hash + '"] ')
+      //.querySelector('[href="' + window.location.hash + '"] ')
+      .querySelector(`[href="${window.location.hash}"]`)
       .classList.add("active");
   }
   setContentAccordingToHash();
